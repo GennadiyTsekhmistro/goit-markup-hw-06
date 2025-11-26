@@ -46,11 +46,17 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn button" type="button"> 
+          <svg class="burger-icon" 
+            width="24" height="24">
+            <use href="./images/icons.svg#icon-burger-icon"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- #endregion header  -->
 
-    <main>
+    <main class="hidden">
       <!-- #region section-title -->
       <section class="section-title">
         <div class="container">
@@ -410,7 +416,7 @@
     </main>
 
     <!-- #region footer -->
-    <footer class="footer-logo-cont">
+    <footer class="footer-logo-cont hidden">
       <div class="container">
         <div class="footer-logo-block">
           <a class="footer-logo" href="./index.html"
@@ -500,7 +506,7 @@
     <!-- #endregion footer -->
 
     <!-- #region Modal window -->
-    <div class="backdrop is-open">
+    <div class="backdrop is-open hidden">
       <div class="modal-drop">
         <button type="button" class="modal-close" aria-label="Закрити">
           <svg class="subscribe-icon-close" width="8" height="8">
