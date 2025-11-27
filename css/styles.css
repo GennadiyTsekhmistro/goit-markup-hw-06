@@ -108,6 +108,11 @@ header {
   fill: #2f2f37;
 }
 
+/* region Modal header */
+
+
+
+
 
 @media screen and (min-width: 768px) {
   .burger-btn {
@@ -133,6 +138,7 @@ header {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
+
   .current::after {
     content: "";
     position: absolute;
@@ -150,6 +156,7 @@ header {
     font-style: normal;
     display: block;
     margin-left: auto;
+    margin-bottom: 48px;
   }
 
   .main-header {
@@ -160,7 +167,7 @@ header {
   .nav-list {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 24px;
   }
 
   .contact-link {
@@ -235,11 +242,96 @@ header {
   position: absolute;
   top: 24px;
   right: 24px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: #e7e9fc;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-nav {
   margin-bottom: auto;
 }
+
+.mobile-menu-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mobile-nav-studio {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+}
+
+.mobile-nav-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.mobile-nav-link.current {
+  color: #404bbf;
+}
+
+.contact-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.phone-block .contact-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #4d5ae5;
+}
+
+.footer-social {
+  display: flex;
+  align-items: baseline;
+  gap: 40px;
+}
+
+.social-icon {
+  width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+    /* колір фону */
+    border-radius: 50%;
+    /* робить круглим */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icon svg {
+  fill: #F4F4FD;
+  width: 24px;
+  height: 24px;
+}
+
+.mobile-menu-container address {
+  margin-top: 168px;
+  margin-bottom: 48px;
+}
+
 
 @media screen and (min-width: 768px) {
   .mobile-menu {

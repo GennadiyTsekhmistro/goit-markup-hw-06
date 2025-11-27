@@ -46,24 +46,98 @@
             </li>
           </ul>
         </address>
-        <button class="burger-btn button" type="button"> 
-          <svg class="burger-icon" 
-            width="24" height="24">
+        <button class="burger-btn button" type="button">
+          <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-burger-icon"></use>
           </svg>
         </button>
       </div>
-      
-      
+
       <div class="mobile-menu is-open">
+        <div class="container mobile-menu-container">
+          <button type="button" class="mobile-menu-close-btn">
+            <svg class="subscribe-icon-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
 
-        <div class="container                mobile-menu-container">
-          <button class="mobile-menu-close-btn">Close</button>
-          <nav class="mobile-menu-nav">Navigation</nav>
-            <address>Address</address>
-          <div>Soc Link</div>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-list">
+              <li>
+                <a href="" class="mobile-nav-link current">Studio</a>
+              </li>
+              <li>
+                <a href="" class="mobile-nav-link">Portfolio</a>
+              </li>
+              <li>
+                <a href="./index.html" class="mobile-nav-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address>
+            <ul class="nav-list">
+              <li class="phone-block">
+                <a href="tel:+110001111111" class="contact-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="contact-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <div class="footer-social-block">
+            <ul class="footer-social">
+              <li class="social-icon">
+                <a
+                  class="social-link"
+                  href="https://instagram.com/abc_def"
+                  aria-label="instagram"
+                >
+                  <svg class="social-networks" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icon">
+                <a
+                  class="social-link"
+                  href="https://twitter.com/example"
+                  aria-label="twitter"
+                >
+                  <svg class="social-networks" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icon">
+                <a
+                  class="social-link"
+                  href="https://facebook.com/example"
+                  aria-label="facebook"
+                >
+                  <svg class="social-networks" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icon">
+                <a
+                  class="social-link"
+                  href="https://linkedin.com/example"
+                  aria-label="linkedin"
+                >
+                  <svg class="social-networks" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-
       </div>
     </header>
     <!-- #endregion header  -->
@@ -546,8 +620,7 @@
           </div>
 
           <div class="input-with-icon">
-            <label class="label-name"
-            for="applicant-phone">Phone</label>
+            <label class="label-name" for="applicant-phone">Phone</label>
             <div class="input-container">
               <input
                 type="tel"
@@ -564,8 +637,7 @@
           </div>
 
           <div class="input-with-icon">
-            <label class="label-name"
-            for="applicant-email">Email</label>
+            <label class="label-name" for="applicant-email">Email</label>
             <div class="input-container">
               <input
                 type="email"
@@ -582,37 +654,39 @@
           </div>
 
           <div class="textarea-container">
-          <label class="label-name"
-          for="user-comment">Comment</label>
-          <textarea
-            id="user-comment"
-            name="user-comment"
-            class="textarea-comment"
-            placeholder="Text input"
-            rows="4"
-          ></textarea>
+            <label class="label-name" for="user-comment">Comment</label>
+            <textarea
+              id="user-comment"
+              name="user-comment"
+              class="textarea-comment"
+              placeholder="Text input"
+              rows="4"
+            ></textarea>
           </div>
 
           <div class="checkbox-wrapper">
-            <input type="checkbox" id="user-privacy" name="user-privacy" 
-            class="checkbox-input visually-hidden"
-            value="true"
-            required />
-            <label class="label-checkbox"
-            for="user-privacy">
-            I accept the terms and conditions of the
-              <span class="checkbox-span"
-                >
+            <input
+              type="checkbox"
+              id="user-privacy"
+              name="user-privacy"
+              class="checkbox-input visually-hidden"
+              value="true"
+              required
+            />
+            <label class="label-checkbox" for="user-privacy">
+              I accept the terms and conditions of the
+              <span class="checkbox-span">
                 <svg class="checkbox-icon" width="10" height="8">
-                <use href="./images/icons/check.svg#icon-check"></use>
-              </svg>
+                  <use href="./images/icons/check.svg#icon-check"></use>
+                </svg>
               </span>
-              <a href="#" 
-              class="privacy-policy-link"
-              target="_blank"
-              style="color: var(--color-blue, #4d5ae5);"
-                  >Privacy Policy</a
-                >
+              <a
+                href="#"
+                class="privacy-policy-link"
+                target="_blank"
+                style="color: var(--color-blue, #4d5ae5)"
+                >Privacy Policy</a
+              >
             </label>
           </div>
           <button type="submit" class="btn-submit">Send</button>
@@ -621,6 +695,6 @@
     </div>
 
     <!-- #endregion Modal window -->
-  <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
