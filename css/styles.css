@@ -342,7 +342,6 @@ button {
 }
 
 .section-strategy li {
-  /* width: calc((100% - 72px) / 4); */
   text-align: center;
 }
 
@@ -370,11 +369,32 @@ button {
   color: #434455;
 }
 
+.feature-block-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.feature-block-item h3 {
+  text-align: center;
+  width: 100%;
+}
 
+.feature-block-item p {
+  text-align: left;
+  width: 100%;
+}
+
+.icon-container {
+  display: none;
+}
 
 
 /* #endregion section-strategy */
+
+/* #region section-fotos */
+
+/* #endregion section-fotos */
 
 
 /* Планшетні стилі */
@@ -460,9 +480,38 @@ button {
     max-width: 496px;
   }
 
+  .section-strategy ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .section-strategy li {
-    /* width: calc((100% - 72px) / 4); */
     text-align: left;
+  }
+
+  .feature-block-item {
+    width: calc((100% - 24px) / 2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .list-feature {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 79px;
+  }
+
+  .feature-block-item h3,
+  .feature-block-item p {
+    text-align: left;
+    width: 100%;
+  }
+
+  .icon-container {
+    display: flex;
   }
 }
 
@@ -495,5 +544,16 @@ button {
     margin-top: 188px;
     margin-bottom: 48px;
     max-width: 496px;
+  }
+
+  .section-strategy ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .feature-block-item {
+    width: calc((100% - 72px) / 4);
   }
 }
