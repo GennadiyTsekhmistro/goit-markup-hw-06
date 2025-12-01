@@ -610,12 +610,12 @@ footer .social-link:focus {
   gap: 8px;
 }
 
-.subscription-form-group {
+/* .subscription-form-group {
   display: flex;
   gap: 8px;
   align-items: flex-end;
   width: 100%;
-}
+} */
 
 .label-footer {
   flex-grow: 1;
@@ -638,10 +638,7 @@ footer .social-link:focus {
 }
 
 .label-footer input {
-  /* padding: 8px 12px; */
-  /* border: 1px solid #ccc; */
   border-radius: 4px;
-  /* font-size: 14px; */
   box-sizing: border-box;
   display: block;
 }

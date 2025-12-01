@@ -222,9 +222,7 @@ header {
   width: 40px;
   height: 40px;
   background-color: #4D5AE5;
-  /* колір фону */
   border-radius: 50%;
-  /* робить круглим */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -642,6 +640,249 @@ button {
 
 /* #endregion portfolio */
 
+/* #region footer */
+
+.footer-logo-cont {
+  background-color: #2e2f42;
+  width: 320px;
+  margin: 96px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.footer-logo-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 96px;
+  margin-bottom: 16px;
+}
+
+.footer-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  max-width: 264px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  text-align: left;
+  margin-top: 72px;
+  margin-bottom: 16px;
+  margin-left: 16px;
+}
+
+.footer-social-block .footer-text {
+  margin-left: 0;
+  text-align: center;
+}
+
+.footer-logo-cont .footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.icon-nav-footer {
+  color: #f4f4fd;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.social-icons ul {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #434455;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #4d5ae5;
+}
+
+.social-icons li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4D5AE5;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons li:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+}
+
+.social-icons svg {
+  fill: #fff;
+}
+
+.footer-logo-cont .social-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-social {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+footer .social-link:hover,
+footer .social-link:focus {
+  background-color: #31d0aa;
+}
+
+.social-networks {
+  fill: #f4f4fd;
+}
+
+.subscribe-title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-align: center;
+}
+
+.subscription-form {
+  display: flex;
+  flex-direction: column;
+  /* поле і кнопка один під одним */
+  align-items: center;
+  /* по центру */
+  gap: 8px;
+}
+
+.footer-subscription {
+  display: flex;
+  flex-direction: column;
+  /* вертикально */
+  align-items: center;
+  /* по центру горизонтально */
+  gap: 16px;
+  /* відстань між заголовком та формою */
+}
+
+.label-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* по центру input та label */
+  width: 100%;
+}
+
+.email-input {
+  padding-left: 16px;
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+}
+
+.label-footer input {
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.subscribe-btn {
+  width: 169px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto" serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+  background-color: #4D5AE5;
+  border: none;
+  border-radius: 4px;
+}
+
+.subscription-input-group {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 0;
+}
+
+.subscription-input-group button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 16px;
+  background-color: #4a76f0;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.subscription-input-group svg {
+  fill: currentColor;
+}
+
+.subscribe-icon {
+  margin-left: 16px;
+  fill: black;
+}
+
+/* #endregion footer */
+
+
 
 /* Планшетні стилі */
 @media screen and (min-width: 768px) {
@@ -781,6 +1022,10 @@ button {
   .portfolio-item {
     width: calc((100% - 24px) / 2);
   }
+
+  .footer-logo-cont {
+    width: 768px;
+  }
 }
 
 
@@ -859,5 +1104,13 @@ button {
 
   .portfolio-item {
     width: calc((100% - 48px) / 3);
+  }
+
+  .footer-logo-cont {
+    width: 1440px;
+  }
+
+  .footer-logo {
+    margin-top: 100px;
   }
 }
