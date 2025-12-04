@@ -657,13 +657,9 @@ button {
 
 .footer-logo-cont .container {
   display: flex;
-  /* активуємо flex */
   flex-direction: column;
-  /* розташування елементів вертикально */
   flex-wrap: wrap;
-  /* дозволяє переносити елементи при нестачі місця */
   gap: 20px;
-  /* відстань між блоками */
   align-items: flex-start;
 }
 
@@ -671,7 +667,6 @@ button {
 .footer-social-block,
 .footer-subscription {
   width: 100%;
-  padding: 10px 0;
 }
 
 .footer-logo-block {
@@ -1050,6 +1045,72 @@ footer .social-link:focus {
 
   /* #endregion portfolio */
   /* #region footer */
+
+  .footer-logo-cont .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 768px;
+    margin: 0 auto;
+    gap: 24px;
+  }
+
+  .footer-logo-cont {
+    width: 768px;
+    margin-top: 89px; 
+  }
+
+
+  .footer-logo-block,
+  .footer-subscription {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+  .footer-social-block {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+  }
+
+ 
+  .subscription-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .subscription-form .email-input {
+    flex: 1;
+  }
+
+  .subscription-form .subscribe-btn {
+    flex: 0 0 auto;
+  }
+
+.footer-logo-block {
+    align-items: flex-start;
+  }
+
+    .footer-logo-block .footer-text {
+      margin-top: 16px;
+    }
+
+.footer-text {
+    margin-left: 0;
+    text-align: left;
+}
+
+.footer-social-block {
+    align-items: flex-start;
+    margin-top: 96px;
+  }
+
 
 
 
