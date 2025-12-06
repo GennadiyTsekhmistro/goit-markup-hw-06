@@ -698,7 +698,6 @@ button {
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  width: 100%;
 }
 
 
@@ -899,11 +898,43 @@ footer .social-link:focus {
     padding: 0 15px;
   }
 
-.burger-btn {
-  display: none;
-}
+  .footer-logo-cont .container {
+    display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 24px;
+      align-items: center;
+  }
 
 
+ /* Перший блок (logo + social) — залишаємо розмір за контентом */
+ .footer-logo-block,
+ .footer-social-block {
+   flex: 1 1 auto;
+ }
+
+ /* Subscription завжди переноситься на новий ряд */
+ .footer-subscription {
+   flex: 1 1 100%;
+ }
+
+
+  .footer-logo-cont {
+    width: 768px;
+  }
+
+
+  .burger-btn {
+    display: none;
+  }
+
+  .footer-logo-block {
+    width: 264px;
+  }
+
+  .footer-social-block {
+    width: 208px;
+  }
 
   /* #region header */
 
@@ -1043,81 +1074,9 @@ footer .social-link:focus {
   /* #endregion portfolio */
   /* #region footer */
 
-  .footer-logo-cont .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 768px;
-    margin: 0 auto;
-  }
 
 
 
-  .footer-logo-cont {
-    width: 768px;
-    margin-top: 89px;
-  }
-
-
-
-
-
-  /*
-.footer-logo-block,
-.footer-subscription {
-  flex: 1 1 45%;
-  display: flex;
-  flex-direction: column;
-}
-
-/*
-.footer-social-block {
-  flex: 1 1 45%;
-  display: flex;
-  flex-direction: column;
-}
-/*
-.subscribe-btn {
-  flex: 0 0 auto;
-  height: 40px;
-}
-
-
-
-
-.footer-logo-block {
-  align-items: flex-start;
-}
-
-.footer-logo-block .footer-text {
-  margin-top: 16px;
-}
-
-.footer-text {
-  margin-left: 0;
-  text-align: left;
-}
-
-.footer-social-block {
-  align-items: flex-start;
-  margin-top: 96px;
-}
-
-.footer-subscription {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
-}
-
-
-
-.email-input {
-  width: 264px;
-  height: 40px;
-} */
 
   /* #endregion footer */
 
