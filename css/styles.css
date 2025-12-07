@@ -895,46 +895,21 @@ footer .social-link:focus {
 
   .container {
     max-width: 768px;
-    padding: 0 15px;
+
   }
 
   .footer-logo-cont .container {
     display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 24px;
-      align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
   }
 
-
- /* Перший блок (logo + social) — залишаємо розмір за контентом */
- .footer-logo-block,
- .footer-social-block {
-   flex: 1 1 auto;
- }
-
- /* Subscription завжди переноситься на новий ряд */
- .footer-subscription {
-   flex: 1 1 100%;
- }
-
-
-  .footer-logo-cont {
-    width: 768px;
-  }
-
-
-  .burger-btn {
+  .mobile-menu {
     display: none;
   }
 
-  .footer-logo-block {
-    width: 264px;
-  }
-
-  .footer-social-block {
-    width: 208px;
-  }
 
   /* #region header */
 
@@ -1074,6 +1049,42 @@ footer .social-link:focus {
   /* #endregion portfolio */
   /* #region footer */
 
+  .footer-logo-block,
+  .footer-social-block {
+    flex: 1 1 auto;
+  }
+
+
+  .footer-subscription {
+    flex: 1 1 100%;
+  }
+
+
+  .footer-logo-cont {
+    width: 768px;
+  }
+
+  .footer-logo-block {
+    width: 264px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 108px;
+    margin-right: 24px;
+    gap: 16px;
+  }
+
+  .footer-text {
+    margin: 0;
+  }
+
+  .footer-social-block {
+    width: 208px;
+  }
+
+  .burger-btn {
+    display: none;
+  }
 
 
 
