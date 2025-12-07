@@ -1049,21 +1049,6 @@ footer .social-link:focus {
   /* #endregion portfolio */
   /* #region footer */
 
-  .footer-logo-block,
-  .footer-social-block {
-    flex: 1 1 auto;
-  }
-
-
-  .footer-subscription {
-    flex: 1 1 100%;
-  }
-
-
-  .footer-logo-cont {
-    width: 768px;
-  }
-
   .footer-logo-block {
     width: 264px;
     display: flex;
@@ -1074,21 +1059,75 @@ footer .social-link:focus {
     gap: 16px;
   }
 
+
+  .footer-logo-block,
+  .footer-social-block {
+    flex: 1 1 auto;
+    width: 208px;
+  }
+
+  .footer-social-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 96px;
+    gap: 16px;
+  }
+
+
+
+
+
+
+  .footer-subscription {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+  .footer-logo-cont {
+    width: 768px;
+  }
+
   .footer-text {
     margin: 0;
   }
 
-  .footer-social-block {
-    width: 208px;
+
+  .subscription-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* вирівнює по вертикалі */
+    gap: 24px;
+    /* відстань між input і кнопкою */
+  }
+
+  .label-footer {
+    align-items: flex-start;
+    margin-bottom: 96px;
+  }
+
+  .footer-subscription.footer-logo-div {
+    padding-left: 108px;
   }
 
   .burger-btn {
     display: none;
   }
 
+.subscribe-btn {
+    width: 165px;
+    height: 40px;
+  }
 
+.email-input {
+    width: 264px; 
+  }
 
-
+  
   /* #endregion footer */
 
 }
