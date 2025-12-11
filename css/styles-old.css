@@ -295,6 +295,9 @@ button {
   margin-bottom: 8px;
 }
 /* #endregion section-strategy */
+
+
+
 /* #region section-fotos */
 .section-fotos {
   background-color: #f4f4fd;
@@ -458,9 +461,11 @@ button {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
   justify-content: center;
+
+
+  column-gap: 24px;
+  row-gap: 48px;  
   margin-bottom: 72px;
 }
 
@@ -513,10 +518,11 @@ button {
 
 
 .portfolio-role {
+  font-weight: 400;
   font-size: 16px;
-  color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: #434455;
 }
 
 .portfolio-image {
@@ -544,6 +550,8 @@ button {
 }
 
 /* #endregion portfolio */
+
+
 /* #region footer */
 .footer-logo-cont {
   background-color: #2e2f42;
@@ -552,6 +560,8 @@ button {
 
 .footer-logo-cont .container {
   display: flex;
+
+  
   align-items: baseline;
   justify-content: flex-start;
   gap: 120px;
@@ -690,6 +700,8 @@ footer .social-link:focus {
   flex-direction: column;
   gap: 8px;
 }
+
+/* #endregion footer */
 
 /* .subscription-form-group {
   display: flex;

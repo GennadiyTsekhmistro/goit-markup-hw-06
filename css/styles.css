@@ -448,7 +448,7 @@ button {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.foto-li img {
+foto-info ul li {
   width: 100%;
   height: auto;
   display: block;
@@ -600,10 +600,11 @@ button {
 }
 
 .portfolio-role {
+  font-weight: 400;
   font-size: 16px;
-  color: #434455;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: #434455;
 }
 
 .portfolio-image {
@@ -645,13 +646,7 @@ button {
 
 
 
-.footer-logo-cont .container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: flex-start;
-}
+
 
 .footer-logo-block,
 .footer-social-block,
@@ -1130,9 +1125,7 @@ footer .social-link:focus {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* вирівнює по вертикалі */
     gap: 24px;
-    /* відстань між input і кнопкою */
   }
 
   .label-footer {
@@ -1231,9 +1224,9 @@ footer .social-link:focus {
 
   /* #region section-strategy */
 
-.container {
-  max-width: 1128px;
-}
+  .container {
+    max-width: 1128px;
+  }
 
 
   .icon-container {
@@ -1273,12 +1266,12 @@ footer .social-link:focus {
     overflow: hidden;
   }
 
-   .section-strategy ul {
+  .section-strategy ul {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     gap: 24px;
-  } 
+  }
 
 
 
@@ -1314,7 +1307,7 @@ footer .social-link:focus {
     box-sizing: content-box;
   }
 
-  
+
   .feature-block-item h3,
   .feature-block-item p {
     text-align: left;
@@ -1331,6 +1324,9 @@ footer .social-link:focus {
 
   /* #endregion section-strategy */
 
+  /* #region section-fotos */
+
+
   .section-fotos {
     background-color: #f4f4fd;
     padding-top: 120px;
@@ -1345,10 +1341,24 @@ footer .social-link:focus {
     width: calc((100% - 3 * 24px) / 4);
   }
 
+  /* #endregion section-fotos */
+
+
+  /* #region portfolio */
+
+  .section.portfolio-section {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
   .portfolio-section {
-    min-width: 1128px;
+    max-width: 1128px;
     padding-top: 120px;
     padding-bottom: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .portfolio-list {
@@ -1359,11 +1369,72 @@ footer .social-link:focus {
     width: calc((100% - 48px) / 3);
   }
 
-  .footer-logo-cont {
-    width: 1440px;
+  /* #endregion portfolio */
+
+
+  /* #region footer */
+
+  .container {
+    margin: 0;
+    padding: 0;
   }
 
-  .footer-logo {
-    margin-top: 100px;
+  .footer-logo-cont {
+    background-color: #2e2f42;
+    width: 100%;
+    margin: 0;
   }
+
+  .footer-logo-cont .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 24px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+.footer-logo-block,
+.footer-social-block,
+.footer-subscription {
+  flex: 0 0 auto;
+  /* не дозволяємо їм розтягуватись */
+}
+
+  /* .footer-logo {
+    margin-top: 100px;
+  } */
+
+  /* 
+.footer-logo-cont .container {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 120px;
+}
+
+.footer-logo-block {
+  margin-right: 120px;
+  align-items: baseline;
+}
+
+.subscription-form {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  gap: 24px;
+} */
+
+
+  /* .footer-logo-cont .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 120px;
+  } */
+
+  /* #endregion footer */
+
+
 }
