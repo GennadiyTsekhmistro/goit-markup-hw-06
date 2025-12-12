@@ -678,7 +678,7 @@ foto-info ul li {
 .footer-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  max-width: 264px;
+  width: 264px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -1393,14 +1393,46 @@ footer .social-link:focus {
     justify-content: center;
     align-items: flex-start;
     width: 100%;
+    margin-top: 100px;
   }
 
-.footer-logo-block,
-.footer-social-block,
-.footer-subscription {
-  flex: 0 0 auto;
-  /* не дозволяємо їм розтягуватись */
-}
+  .footer-logo-block {
+    align-items: flex-start;
+    margin-left: 156px;
+    margin-right: 120px;
+    width: 264px;
+  }
+
+  .footer-logo {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  .footer-social-block {
+    align-items: flex-start;
+    width: 208px;
+    margin-top: 0;
+  }
+
+
+  .footer-subscription {
+    align-items: flex-start;
+    width: 453px;
+    padding: 0;
+    margin-right: 159px;
+    margin-left: 80px;
+  }
+
+  .footer-subscription.footer-logo-div {
+    padding-left: 0;
+  }
+
+  .subscribe-title {
+    margin-bottom: 16px;
+    margin-top: 0;
+  }
+
 
   /* .footer-logo {
     margin-top: 100px;
