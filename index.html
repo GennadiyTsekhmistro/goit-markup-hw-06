@@ -18,7 +18,7 @@
   </head>
   <body>
     <!-- #region header  -->
-    <header class="header-logo-cont">
+    <header class="header-logo-cont hidden">
       <div class="container header-container">
         <nav class="main-header">
           <a class="icon-link" href="./index.html"
@@ -152,7 +152,7 @@
             Effective Solutions<br />
             for Your Business
           </h1>
-          <button type="button" class="order-btn">Order Service</button>
+          <button type="button" data-menu-open class="order-btn">Order Service</button>
         </div>
       </section>
       <!-- #endregion section-title -->
@@ -385,8 +385,8 @@
       <!-- #endregion section-fotos -->
 
       <!-- #region portfolio -->
-      <section class="section portfolio-section">
-        <div class="container hidden">
+      <section class="section portfolio-section hidden">
+        <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-item">
@@ -522,7 +522,7 @@
    
 
     <footer class="footer-logo-cont">
-      <div class="container">
+      <div class="container hidden">
         <div class="footer-logo-block footer-logo-div">
           <a class="footer-logo" href="./index.html"
             >Web
@@ -610,9 +610,9 @@
     <!-- #endregion footer -->
 
     <!-- #region Modal window -->
-    <div class="backdrop is-open hidden">
+    <div class="backdrop is-open" data-menu>
       <div class="modal-drop">
-        <button type="button" class="modal-close" aria-label="Закрити">
+        <button type="button" data-menu-close class="modal-close" aria-label="Закрити">
           <svg class="subscribe-icon-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
