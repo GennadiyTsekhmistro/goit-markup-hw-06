@@ -685,8 +685,7 @@ foto-info ul li {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   text-align: left;
-  margin-top: 72px;
-  margin-bottom: 16px;
+  margin-bottom: 72px;
   margin-left: 16px;
 }
 
@@ -707,6 +706,8 @@ foto-info ul li {
   display: flex;
   justify-content: center;
   gap: 16px;
+  margin-top: 16px;
+  margin-bottom: 72px;
 }
 
 .icon-nav-footer {
@@ -815,6 +816,8 @@ footer .social-link:focus {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .email-input {
@@ -900,6 +903,7 @@ footer .social-link:focus {
 
   .container {
     max-width: 768px;
+    padding: 0;
   }
 
   .footer-logo-cont .container {
@@ -1079,62 +1083,67 @@ footer .social-link:focus {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 96px;
     margin-left: 108px;
     margin-right: 24px;
     gap: 16px;
   }
 
 
-  .footer-logo-block,
+  /* .footer-logo-block,
   .footer-social-block {
     flex: 1 1 auto;
     width: 208px;
+  } */
+
+  .footer-logo {
+    margin: 0;
+    padding-bottom: 16px;
   }
 
   .footer-social-block {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 96px;
-    gap: 16px;
+    width: 208px;
+    height: 80px;
+    gap: 0;
+  }
+
+
+  .footer-social-block .footer-text {
+    text-align: left;
   }
 
 
 
-
-
-
-  .footer-subscription {
-    flex: 1 1 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
 
 
   .footer-logo-cont {
     width: 768px;
-  }
-
-  .footer-text {
-    margin: 0;
+    margin-top: 89px;
   }
 
 
-  .subscription-form {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 24px;
-  }
+
+
+
 
   .label-footer {
-    align-items: flex-start;
+    display: block;
+
+
+
+    /* align-items: flex-start; */
     margin-bottom: 96px;
   }
 
-  .footer-subscription.footer-logo-div {
-    padding-left: 108px;
+  .footer-subscription {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 108px;
+    margin-bottom: 96px;
   }
 
   .burger-btn {
@@ -1144,11 +1153,61 @@ footer .social-link:focus {
   .subscribe-btn {
     width: 165px;
     height: 40px;
+    margin-top: 0;
   }
 
   .email-input {
     width: 264px;
   }
+
+
+
+
+  /* 1. Форми: горизонтальний ряд */
+  .subscription-form {
+    display: flex;
+    flex-direction: row;
+    /* input + button горизонтально */
+    align-items: flex-start;
+    /* верхній край вирівнювання */
+    gap: 16px;
+    /* відстань між label і кнопкою */
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  /* 2. Label: текст + input горизонтально */
+  .label-footer {
+    display: flex;
+    /* label як flex-контейнер */
+    flex-direction: row;
+    /* текст і input по горизонталі */
+    align-items: center;
+    /* вертикальне вирівнювання */
+    gap: 8px;
+    /* відстань між текстом і input */
+    margin: 0;
+    /* прибираємо зайві відступи */
+    width: auto;
+    /* label не тягнеться на всю ширину */
+  }
+
+ 
+
+  /* 4. Кнопка */
+  .subscribe-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 165px;
+    height: 40px;
+    margin-top: 0;
+    margin-left: 24px;
+  }
+
+
+
+
 
 
   /* #endregion footer */
@@ -1400,6 +1459,7 @@ footer .social-link:focus {
     align-items: flex-start;
     margin-left: 156px;
     margin-right: 120px;
+    margin-bottom: 100px;
     width: 264px;
   }
 
@@ -1413,6 +1473,12 @@ footer .social-link:focus {
     align-items: flex-start;
     width: 208px;
     margin-top: 0;
+    margin-bottom: 132px;
+  }
+
+  .footer-social-block .footer-text {
+    text-align: left;
+    margin-left: 0;
   }
 
 
@@ -1424,15 +1490,25 @@ footer .social-link:focus {
     margin-left: 80px;
   }
 
+
+
+
+
+
+
   .footer-subscription.footer-logo-div {
     padding-left: 0;
   }
 
+
+
   .subscribe-title {
-    margin-bottom: 16px;
     margin-top: 0;
   }
 
+  .label-footer {
+    margin-bottom: 0;
+  }
 
   /* .footer-logo {
     margin-top: 100px;
