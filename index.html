@@ -18,7 +18,7 @@
   </head>
   <body>
     <!-- #region header  -->
-    <header class="header-logo-cont hidden">
+    <header class="header-logo-cont">
       <div class="container header-container">
         <nav class="main-header">
           <a class="icon-link" href="./index.html"
@@ -146,19 +146,21 @@
 
     <main>
       <!-- #region section-title -->
-      <section class="section-title hidden">
+      <section class="section-title">
         <div class="container">
           <h1 class="main-title">
             Effective Solutions<br />
             for Your Business
           </h1>
-          <button type="button" data-menu-open class="order-btn">Order Service</button>
+          <button type="button" data-modal-open class="order-btn">
+            Order Service
+          </button>
         </div>
       </section>
       <!-- #endregion section-title -->
 
       <!-- #region section-strategy -->
-      <section class="section-strategy hidden">
+      <section class="section-strategy">
         <div class="container">
           <h2 class="visually-hidden">Our Features</h2>
           <ul class="list-feature">
@@ -219,14 +221,16 @@
       <!-- #endregion section-strategy -->
 
       <!-- #region section-fotos -->
-      <section class="section-fotos hidden">
+      <section class="section-fotos">
         <div class="container">
           <h2 class="our_team">Our Team</h2>
           <ul class="list-foto">
             <li class="foto-li">
-              <img src="./images/img-Mark-Guerrero.jpg" 
-              srcset="./images/img-Mark-Guerrero 2x.jpg 2x"
-              alt="Mark Guerrero" />
+              <img
+                src="./images/img-Mark-Guerrero.jpg"
+                srcset="./images/img-Mark-Guerrero 2x.jpg 2x"
+                alt="Mark Guerrero"
+              />
               <div class="foto-info">
                 <h3 class="foto-title">Mark Guerrero</h3>
                 <p class="foto-text">Product Designer</p>
@@ -263,9 +267,11 @@
               </div>
             </li>
             <li class="foto-li">
-              <img src="./images/img-Tom-Ford.jpg" 
-              srcset="./images/img-Tom-Ford 2x.jpg 2x"
-              alt="Tom Ford" />
+              <img
+                src="./images/img-Tom-Ford.jpg"
+                srcset="./images/img-Tom-Ford 2x.jpg 2x"
+                alt="Tom Ford"
+              />
               <div class="foto-info">
                 <h3 class="foto-title">Tom Ford</h3>
                 <p class="foto-text">Frontend Developer</p>
@@ -302,9 +308,11 @@
               </div>
             </li>
             <li class="foto-li">
-              <img src="./images/img-Camila-Garcia.jpg" 
-              srcset="./images/img-Camila-Garcia 2x.jpg 2x"
-              alt="Camila Garcia" />
+              <img
+                src="./images/img-Camila-Garcia.jpg"
+                srcset="./images/img-Camila-Garcia 2x.jpg 2x"
+                alt="Camila Garcia"
+              />
               <div class="foto-info">
                 <h3 class="foto-title">Camila Garcia</h3>
                 <p class="foto-text">Marketing</p>
@@ -341,9 +349,11 @@
               </div>
             </li>
             <li class="foto-li">
-              <img src="./images/img-Daniel-Wilson.jpg"
-              srcset="./images/img-Daniel-Wilson 2x.jpg 2x"
-              alt="Daniel Wilson" />
+              <img
+                src="./images/img-Daniel-Wilson.jpg"
+                srcset="./images/img-Daniel-Wilson 2x.jpg 2x"
+                alt="Daniel Wilson"
+              />
               <div class="foto-info">
                 <h3 class="foto-title">Daniel Wilson</h3>
                 <p class="foto-text">UI Designer</p>
@@ -385,7 +395,7 @@
       <!-- #endregion section-fotos -->
 
       <!-- #region portfolio -->
-      <section class="section portfolio-section hidden">
+      <section class="section portfolio-section">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -519,10 +529,8 @@
 
     <!-- #region footer -->
 
-   
-
     <footer class="footer-logo-cont">
-      <div class="container hidden">
+      <div class="container">
         <div class="footer-logo-block footer-logo-div">
           <a class="footer-logo" href="./index.html"
             >Web
@@ -610,9 +618,14 @@
     <!-- #endregion footer -->
 
     <!-- #region Modal window -->
-    <div class="backdrop is-open" data-menu>
+    <div class="backdrop is-open" data-modal>
       <div class="modal-drop">
-        <button type="button" data-menu-close class="modal-close" aria-label="Закрити">
+        <button
+          type="button"
+          data-modal-close
+          class="modal-close"
+          aria-label="Закрити"
+        >
           <svg class="subscribe-icon-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -710,7 +723,7 @@
           <button type="submit" class="btn-submit">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
     <!-- #endregion Modal window -->
     <script src="./js/modal.js"></script>
