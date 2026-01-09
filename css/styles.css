@@ -230,10 +230,19 @@ header {
   max-width: 320px;
   margin: 0 auto;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/img-name.jpg);
+    url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+@media (min-resolution: 192dpi),
+(min-device-pixel-ratio: 2) {
+  .section-title {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url("../images/people-office2x.jpg");
+  }
 }
 
 .main-title {
