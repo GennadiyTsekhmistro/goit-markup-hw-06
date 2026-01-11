@@ -226,7 +226,7 @@ header {
   justify-content: center;
   text-align: center;
   background-color: #2e2f42;
-  padding: 188px 0 188px 0;
+  padding: 72px 0;
   max-width: 320px;
   margin: 0 auto;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -252,10 +252,8 @@ header {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  margin: 0 auto;
-  margin-top: 72px;
-  margin-bottom: 72px;
-  max-width: 261px;
+  margin: 0 auto 72px;
+  max-width: 216px;
 }
 
 button {
@@ -277,6 +275,8 @@ button {
   border: none;
   border-radius: 4px;
   margin: 0 auto;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -427,8 +427,10 @@ button {
   fill: #f4f4fd;
 }
 
-.list-foto {
+.section-fotos .list-foto {
+  display: flex;
   flex-direction: column;
+  gap: 72px;
 }
 
 .foto-li {
@@ -447,7 +449,7 @@ button {
 }
 
 .foto-info {
-  padding: 32px 0;
+  padding: 32px 16px;
 }
 
 .foto-info ul {
@@ -837,6 +839,12 @@ footer .social-link:focus {
   border-radius: 4px;
   margin-top: 16px;
   margin-bottom: 96px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: #31d0aa;
 }
 
 .subscription-input-group {
@@ -890,9 +898,7 @@ footer .social-link:focus {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  width: 320px;
-  height: 640px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .backdrop:not(.is-open) .modal-drop {
@@ -987,6 +993,7 @@ footer .social-link:focus {
   letter-spacing: 0.04em;
   color: #8e8f99;
   display: block;
+  margin-bottom: 4px;
 }
 
 .input-container {
@@ -1160,7 +1167,9 @@ footer .social-link:focus {
 
   .container {
     max-width: 768px;
-    padding: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
   }
 
   .footer-logo-cont .container {
@@ -1236,12 +1245,13 @@ footer .social-link:focus {
   }
 
   .contact-link {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     color: #434455;
     display: block;
+    padding: 12px 0;
   }
 
   .nav-link-header:hover,
@@ -1305,7 +1315,7 @@ footer .social-link:focus {
   /* #region section-fotos */
 
 
-  .list-foto {
+  .section-fotos .list-foto {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
@@ -1334,6 +1344,11 @@ footer .social-link:focus {
 
   /* #endregion portfolio */
   /* #region footer */
+
+  .footer-logo-cont {
+    width: 768px;
+    margin-top: 89px;
+  }
 
   .footer-logo-block {
     width: 264px;
@@ -1364,9 +1379,8 @@ footer .social-link:focus {
     text-align: left;
   }
 
-  .footer-logo-cont {
-    width: 768px;
-    margin-top: 89px;
+  .footer-text {
+    margin-left: 0;
   }
 
   .label-footer {
@@ -1513,7 +1527,8 @@ footer .social-link:focus {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding: 24px 0;
+    padding: 12px 0;
+    margin-left: auto;
   }
 
   /* #endregion header */
@@ -1653,7 +1668,7 @@ footer .social-link:focus {
 
 
 
-  .list-foto {
+  .section-fotos .list-foto {
     flex-wrap: nowrap;
   }
 
