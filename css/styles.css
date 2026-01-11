@@ -987,6 +987,16 @@ footer .social-link:focus {
   width: 100%;
 }
 
+
+.modal-title,
+.input-with-icon,
+.textarea-container {
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+}
+
+
 .label-name {
   font-size: 12px;
   line-height: 1.17;
