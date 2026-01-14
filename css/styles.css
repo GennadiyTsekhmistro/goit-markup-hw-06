@@ -1312,7 +1312,7 @@ footer .social-link:focus {
   .list-feature {
     display: flex;
     flex-wrap: wrap;
-    
+
     list-style: none;
     padding: 0;
     margin: 0;
@@ -1597,7 +1597,7 @@ footer .social-link:focus {
     margin: 0;
   }
 
-  
+
 
   .visually-hidden {
     position: absolute;
