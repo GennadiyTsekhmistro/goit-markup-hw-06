@@ -313,8 +313,6 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-
   gap: 72px;
 }
 
@@ -805,13 +803,13 @@ footer .social-link:focus {
   padding-left: 16px;
   width: 288px;
   height: 40px;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
   background-color: transparent;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  color: #ffffff;
+  color: #fff;
 }
 
 .label-footer input {
@@ -871,6 +869,18 @@ footer .social-link:focus {
 .subscribe-icon {
   margin-left: 16px;
   fill: black;
+}
+
+.email-input:focus {
+  outline: none;
+  border-color: #31d0aa;
+}
+
+.email-input::placeholder {
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 
 /* #endregion footer */
@@ -1247,13 +1257,17 @@ footer .social-link:focus {
   }
 
   .contact-link {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.5;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.33;
     letter-spacing: 0.02em;
     color: #434455;
     display: block;
     padding: 12px 0;
+  }
+
+  .phone-block .contact-link {
+    color: #4d5ae5;
   }
 
   .nav-link-header:hover,
@@ -1269,13 +1283,13 @@ footer .social-link:focus {
 
   .section-title {
     max-width: 768px;
+    padding: 112px 0;
   }
 
   .main-title {
     font-size: 56px;
     line-height: 1.07143;
     letter-spacing: 0.02em;
-    margin-top: 112px;
     margin-bottom: 36px;
     max-width: 496px;
   }
@@ -1288,6 +1302,7 @@ footer .social-link:focus {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 72px 24px;
   }
 
   .section-strategy li {
@@ -1297,7 +1312,7 @@ footer .social-link:focus {
   .list-feature {
     display: flex;
     flex-wrap: wrap;
-    gap: 72px 24px;
+    
     list-style: none;
     padding: 0;
     margin: 0;
@@ -1417,7 +1432,7 @@ footer .social-link:focus {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 16px;
+    gap: 24px;
     margin-top: 0;
     margin-left: 0;
   }
@@ -1438,13 +1453,8 @@ footer .social-link:focus {
     width: 165px;
     height: 40px;
     margin-top: 0;
-    margin-left: 24px;
+    margin-left: 0;
   }
-
-
-
-
-
 
   /* #endregion footer */
 
@@ -1531,7 +1541,7 @@ footer .social-link:focus {
   }
 
   .contact-link {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -1545,10 +1555,10 @@ footer .social-link:focus {
 
   .section-title {
     max-width: 1440px;
+    padding: 188px 0;
   }
 
   .main-title {
-    margin-top: 188px;
     margin-bottom: 48px;
     max-width: 496px;
   }
@@ -1583,11 +1593,11 @@ footer .social-link:focus {
 
   .section-strategy {
     background-color: #fff;
-    padding-bottom: 120px;
-    padding-top: 120px;
-    margin-left: 156px;
-    margin-right: 156px;
+    padding: 120px 0;
+    margin: 0;
   }
+
+  
 
   .visually-hidden {
     position: absolute;
@@ -1782,10 +1792,6 @@ footer .social-link:focus {
 
   .subscription-form {
     gap: 24px;
-  }
-
-  .subscribe-btn {
-    margin-left: 0;
   }
 
   /* #endregion footer */
