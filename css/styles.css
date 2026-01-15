@@ -1015,6 +1015,10 @@ footer .social-link:focus {
   width: 100%;
 }
 
+.textarea-container {
+  margin-bottom: 16px;
+}
+
 .label-name {
   font-size: 12px;
   line-height: 1.17;
@@ -1086,7 +1090,6 @@ footer .social-link:focus {
   color: #8e8f99;
   width: 256px;
 }
-
 
 .checkbox-span {
   width: 16px;
@@ -1195,6 +1198,7 @@ footer .social-link:focus {
 
   .container {
     max-width: 768px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -1379,7 +1383,6 @@ footer .social-link:focus {
   /* #region footer */
 
   .footer-logo-cont {
-    width: 768px;
     margin-top: 89px;
   }
 
@@ -1790,6 +1793,12 @@ footer .social-link:focus {
   .footer-social-block .footer-text {
     text-align: left;
     margin-left: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
   }
 
 
