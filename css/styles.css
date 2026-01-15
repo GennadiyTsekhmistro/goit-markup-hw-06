@@ -183,7 +183,23 @@ header {
   color: #434455;
 }
 
-/* #endregion mobile-menu */
+.contact-link.contact-link-mailto {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.contact-link.contact-link-tel {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #4d5ae5;
+}
+
+/* #region mobile-menu */
 
 .footer-social {
   display: flex;
@@ -291,8 +307,8 @@ button {
 
 .section-strategy {
   background-color: #fff;
-  padding-bottom: 120px;
-  padding-top: 120px;
+  padding-bottom: 96px;
+  padding-top: 96px;
 }
 
 .visually-hidden {
@@ -1253,21 +1269,20 @@ footer .social-link:focus {
   .nav-list {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 12px;
   }
 
-  .contact-link {
+  .nav-list a {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.33;
-    letter-spacing: 0.02em;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
     color: #434455;
+  }
+
+  .contact-link.contact-link-mailto {
     display: block;
     padding: 12px 0;
-  }
-
-  .phone-block .contact-link {
-    color: #4d5ae5;
   }
 
   .nav-link-header:hover,
@@ -1523,9 +1538,13 @@ footer .social-link:focus {
   .nav-list a {
     position: relative;
     text-decoration: none;
-    color: #404bbf;
     padding-bottom: 4px;
     transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
   }
 
   .icon-link {
