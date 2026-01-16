@@ -97,7 +97,7 @@ header {
   fill: #2f2f37;
 }
 
-/* region Modal header */
+/* region Modal-header */
 
 .mobile-menu {
   position: fixed;
@@ -199,6 +199,8 @@ header {
   color: #4d5ae5;
 }
 
+/* endregion Modal-header */
+
 /* #region mobile-menu */
 
 .footer-social {
@@ -227,6 +229,11 @@ header {
 .mobile-menu-container address {
   margin-top: 168px;
   margin-bottom: 48px;
+}
+
+.mobile-menu .contact-link {
+  display: block;
+  margin-bottom: 24px;
 }
 
 /* #endregion mobile-menu */
@@ -1244,6 +1251,10 @@ footer .social-link:focus {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
+  .nav-link-header.current {
+    color: #404bbf;
+  }
+
   .current::after {
     content: "";
     position: absolute;
@@ -1738,7 +1749,15 @@ footer .social-link:focus {
 
   .portfolio-item {
     width: calc((100% - 48px) / 3);
+    box-shadow: none;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  .portfolio-item:hover {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    transform: translateY(-5px);
+  }
+
 
   /* #endregion portfolio */
 
