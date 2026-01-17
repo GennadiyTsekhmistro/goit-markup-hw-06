@@ -40,7 +40,7 @@ IMG {
 
 .container {
   max-width: 320px;
-  padding: 0 16px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -119,7 +119,6 @@ header {
 }
 
 .mobile-menu-container {
-  position: relative;
   padding-top: 72px;
   padding-bottom: 40px;
   display: flex;
@@ -283,7 +282,6 @@ header {
 }
 
 button {
-  justify-content: center;
   cursor: pointer;
   background: #4d5ae5;
 }
@@ -526,9 +524,9 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
   text-align: center;
   margin-bottom: 8px;
+  color: #434455;
 }
 
 
@@ -592,11 +590,11 @@ button {
 }
 
 .portfolio-info h3 {
-  margin: 32px 0 8px 16px;
+  margin-bottom: 8px;
 }
 
 .portfolio-info p {
-  margin-left: 16px;
+  margin: 0;
 }
 
 .portfolio-item:hover .portfolio-info {
@@ -668,6 +666,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* padding: 0 16px; */
 }
 
 .footer-logo {
@@ -680,7 +679,6 @@ button {
   color: #4d5ae5;
   text-decoration: none;
   display: inline-block;
-  margin-top: 96px;
   margin-bottom: 16px;
 }
 
@@ -690,12 +688,9 @@ button {
   width: 264px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #fff;
   text-align: left;
   margin-bottom: 72px;
-  margin-left: 16px;
 }
 
 .footer-social-block {
@@ -862,7 +857,7 @@ footer .social-link:focus {
   border: none;
   border-radius: 4px;
   margin-top: 16px;
-  margin-bottom: 96px;
+  /* margin-bottom: 96px; */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1006,11 +1001,11 @@ footer .social-link:focus {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-top: 72px;
   margin-bottom: 16px;
 }
 
 .subscribe-icon-close {
+  fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1157,7 +1152,6 @@ footer .social-link:focus {
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0 auto;
-  margin-bottom: 24px;
 }
 
 .btn-submit:hover {
@@ -1218,8 +1212,8 @@ footer .social-link:focus {
 
   .container {
     max-width: 768px;
-    width: 100%;
     margin: 0 auto;
+    padding: 0 16px;
   }
 
   .footer-logo-cont .container {
@@ -1407,9 +1401,6 @@ footer .social-link:focus {
   /* #endregion portfolio */
   /* #region footer */
 
-  .footer-logo-cont {
-    margin-top: 89px;
-  }
 
   .footer-logo-block {
     width: 264px;
@@ -1546,6 +1537,12 @@ footer .social-link:focus {
 /* Десктопні стилі */
 @media screen and (min-width: 1158px) {
 
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
   /* #region header */
 
   .header-container {
@@ -1612,12 +1609,6 @@ footer .social-link:focus {
 
   /* #region section-strategy */
 
-  .container {
-    max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-  }
 
   .icon-container {
     display: flex;
@@ -1640,8 +1631,6 @@ footer .social-link:focus {
     padding: 120px 0;
     margin: 0;
   }
-
-
 
   .visually-hidden {
     position: absolute;
@@ -1777,10 +1766,6 @@ footer .social-link:focus {
 
 
   /* #region footer */
-
-  .container {
-    padding: 0;
-  }
 
   .footer-logo-cont {
     background-color: #2e2f42;
