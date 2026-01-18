@@ -319,9 +319,9 @@ button {
   padding-top: 96px;
 }
 
-.section-strategy .feature-block-item { 
+/* .section-strategy .feature-block-item { 
   width: 100%; 
-}
+} */
 
 .visually-hidden {
   position: absolute;
@@ -342,6 +342,7 @@ button {
   align-items: center;
   flex-direction: column;
   gap: 72px;
+  width: 100%;
 }
 
 .section-strategy li {
