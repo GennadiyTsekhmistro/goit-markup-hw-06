@@ -437,14 +437,6 @@ button {
   margin-bottom: 8px;
 }
 
-.section ul li p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #f4f4fd;
-}
-
 .section-fotos img {
   display: block;
   margin: 0 auto;
@@ -1026,10 +1018,6 @@ footer .social-link:focus {
   width: 100%;
 }
 
-.textarea-container {
-  margin-bottom: 16px;
-}
-
 .label-name {
   font-size: 12px;
   line-height: 1.17;
@@ -1229,11 +1217,16 @@ footer .social-link:focus {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
-    align-items: center;
+     /* gap: 24px;
+    align-items: center; */
     padding-left: 108px;
     padding-right: 108px;
+    align-items: flex-start;
+    row-gap: 72px;
+    column-gap: 24px;
+    margin: 0;
   }
+  
 
   .mobile-menu {
     display: none;
@@ -1432,6 +1425,7 @@ footer .social-link:focus {
     width: 208px;
     height: 80px;
     gap: 0;
+    margin-top: 96px;
   }
 
   .footer-social-block .footer-text {
@@ -1538,7 +1532,6 @@ footer .social-link:focus {
   /* #endregion Modal window */
 
 
-}
 
 
 
@@ -1548,7 +1541,7 @@ footer .social-link:focus {
 
   .container {
     max-width: 1158px;
-    padding: 0 16px;
+    padding: 0 15px;
     margin: 0 auto;
   }
 
@@ -1596,7 +1589,6 @@ footer .social-link:focus {
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding: 12px 0;
-    margin-left: auto;
   }
 
   /* #endregion header */
@@ -1791,6 +1783,7 @@ footer .social-link:focus {
     width: 100%;
     margin-top: 100px;
     gap: 0;
+    padding: 0;
   }
 
   .footer-logo-block {
@@ -1813,8 +1806,7 @@ footer .social-link:focus {
   .footer-social-block {
     align-items: flex-start;
     width: 208px;
-    margin-top: 0;
-    margin-bottom: 132px;
+    margin: 0 80px 132px 0;
   }
 
   .footer-social-block .footer-text {
@@ -1834,7 +1826,8 @@ footer .social-link:focus {
     width: 453px;
     padding: 0;
     margin-right: 159px;
-    margin-left: 80px;
+    /* margin-left: 80px; */
+    margin-left: auto;
   }
 
   .footer-subscription.footer-logo-div {
@@ -1851,4 +1844,4 @@ footer .social-link:focus {
 
   /* #endregion footer */
 
-}
+}}
