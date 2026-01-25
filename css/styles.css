@@ -352,10 +352,12 @@ button {
 .section-strategy ul {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   flex-direction: column;
   gap: 72px;
   width: 100%;
+  align-items: stretch;
+
 }
 
 .section-strategy li {
@@ -503,7 +505,8 @@ button {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #4D5AE5;
 }
 
@@ -747,7 +750,7 @@ button {
   height: 100%;
   border-radius: 50%;
   background-color: #434455;
-  transition: background-color 0.3s ease;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icons a:hover {
@@ -762,7 +765,7 @@ button {
   height: 40px;
   border-radius: 50%;
   background-color: #4D5AE5;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icons li:hover {
@@ -843,7 +846,7 @@ footer .social-link:focus {
   letter-spacing: 0.04em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: #fff;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .label-footer input {
@@ -1202,7 +1205,7 @@ footer .social-link:focus {
   padding: 4px;
   border: 1px solid transparent;
   border-radius: 4px;
-  transition: border-color 0.2s ease;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-bottom: 16px;
 }
 
@@ -1228,9 +1231,9 @@ footer .social-link:focus {
     padding: 0 16px;
   }
 
-.header-container {
-  height: 72px;
-}
+  .header-container {
+    height: 72px;
+  }
 
   .footer-logo-cont .container {
     display: flex;
@@ -1418,7 +1421,7 @@ footer .social-link:focus {
 
 
   /* #endregion portfolio */
- 
+
   /* #region footer */
 
 
@@ -1582,7 +1585,7 @@ footer .social-link:focus {
     position: relative;
     text-decoration: none;
     padding-bottom: 4px;
-    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
